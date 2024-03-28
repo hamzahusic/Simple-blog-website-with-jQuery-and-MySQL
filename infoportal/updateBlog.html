@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add blog</title>
+    <link rel="stylesheet" href="./addBlog.css">
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="login-panel">
+        <header>
+            <div class="nav container">
+                <a href="./index.html" class="logo">Nazad na pocetnu</span></a>
+            </div>
+        </header>
+
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <form id="admin-form">
+            <h3>Admin Login</h3>
+
+            <label for="username">Email</label>
+            <input type="text" placeholder="primjer@gmail.com" id="username">
+
+            <label for="password">Sifra</label>
+            <input type="password" placeholder="sifra123..." id="password">
+
+            <button>Log In</button>
+        </form>
+    </div>
+    <div class="admin-panel">
+        <div class="admin-containter">
+            <h1>Update blog</h1>
+            <form id="blog-add">
+                <label for="naslov">Unesite naslov</label><br>
+                <input type="text" id="naslov" name="naslov" placeholder="Novost dana..." maxlength="200"><br>
+                <label for="sadrzaj">Unesite sadrzaj</label><br>
+                <textarea name="sadrzaj" id="sadrzaj" rows="10" placeholder="Šokantno...">
+                </textarea><br>
+                <label>Odaberite sliku</label><br>
+                <label for="slika" id="img-lbl">
+                    Choose image
+                    <input type="file" accept="image/*" id="slika" name="slika"><br>
+                </label>
+                <img src="#" alt="preview image" id="prew_img" style="width: 100%; max-width: 350px;"><br>
+                <label for="kategorija">Izaberite kategoriju:</label><br>
+                <select name="kategorija" id="kategorija">
+                    <option value="tech">Tech</option>
+                    <option value="news">News</option>
+                    <option value="food">Food</option>
+                </select>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <button>Objavi obnovljeno</button>
+                    <a href="./index.html">Odustani</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./updateBlog.js"></script>
+</body>
+</html>

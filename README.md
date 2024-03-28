@@ -1,7 +1,7 @@
 
 # Platform for publishing blogs
 
-Simple website created with jquery and mysql database. Loaded with simple animations 
+Simple website created with jQuery and MySQL database. Loaded with simple animations 
 
 ## Starting application
 
@@ -13,7 +13,7 @@ Create schema/database on root with name -> infoportal (otherwise you will need 
 
 #### Open query for infoportal database
 
-And run SQL file -> infoportalSQL
+And run SQL file -> infoportalBaza
 
 ### Frontend
 
